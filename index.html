@@ -22,19 +22,39 @@
 </head>
 <body>
   <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" 
+id="exampleModal" tabindex="-1" 
+aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="mb-2">
+          <label for="imageurl" class="form-label">Image Url</label>
+          <input type="url" class="form-control" id="imageurl" placeholder="http://images.com/image">
+        </div>
+        <div class="mb-2">
+          <label for="tasktitle" class="form-label">Task Title</label>
+          <input type="text" class="form-control" id="tasktitle" placeholder="API Integration">
+        </div>
+        <div class="mb-2">
+          <label for="tasktype" class="form-label">Task Type</label>
+          <input type="text" class="form-control" id="tasktype" placeholder="development">
+        </div>
+      <div class="mb-2">
+        <label for="taskdescription" class="form-label">Task Description</label>
+        <textarea rows="5"  
+        class="form-control" 
+        id="taskdescription">
+          </textarea>
       </div>
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
       </div>
     </div>
   </div>
@@ -106,5 +126,8 @@
     </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--our javascript-->
+<script src="index.js"></script>
 </body>
 </html>
